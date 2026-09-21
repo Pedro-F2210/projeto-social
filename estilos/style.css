@@ -6,9 +6,41 @@
 }
 
 body {
-    background-image: url('../imagens/fundo-madeira.jpg');
-    background-repeat: no-repeat;
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
-    
+    min-height: 100vh;
+    position: relative;
 }
+
+
+#imagem-iphone {
+    position: absolute;
+    background-size: 100% 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tela-home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 75vh;
+    width: 45vh;
+    background-size: contain;
+}
+
+button img{
+    max-height: 10vh;
+    min-width: 5vw;
+}
+
+section ul {
+    position: absolute;
+    right: 0%;
+    top: 3%;
+    list-style-type: none;
+}
+
