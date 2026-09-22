@@ -29,12 +29,14 @@ body {
     transform: translate(-50%, -50%);
     min-height: 75vh;
     width: 45vh;
-    background-size: contain;
+    background-size: cover;
 }
 
-button img{
+a img{
     max-height: 10vh;
     min-width: 5vw;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 section ul {
@@ -43,4 +45,3 @@ section ul {
     top: 3%;
     list-style-type: none;
 }
-
