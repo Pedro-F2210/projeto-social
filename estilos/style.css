@@ -22,26 +22,44 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#tela-home {
+#molde-home {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-height: 75vh;
-    width: 45vh;
-    background-size: cover;
+    background-color: black;
+    height: 471px;
+    width: 269px;
+}
+
+#tela-home {
+    background-image: url('../imagens/tela-home.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    height: 474px;
+    width: 269px;
 }
 
 a img{
-    max-height: 10vh;
-    min-width: 5vw;
+    height: 54px;
+    width: 48px;
     border-radius: 50%;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
 }
 
 section ul {
     position: absolute;
     right: 0%;
-    top: 3%;
+    top: 1%;
     list-style-type: none;
+}
+
+a img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.603);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px black;
+    transition: transform 0.3s, border 1s;
 }
